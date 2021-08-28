@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block title %}
+Profile Page
+{% endblock %}
+
+{% block content %}
+<body>
+<div id="disease">
+    <br>
+      <div class="b-example-divider"></div>
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-md-10 mx-auto col-lg-5">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center text-center"> 
+                  <img src="https://visualpharm.com/assets/908/User-595b40b85ba036ed117dc597.svg" alt="Admin" class="rounded-circle" width="150">
+                  <div class="mt-3">
+                    <h4>John Doe</h4>
+                    <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p> </div></div></div></div>
+          </div>
+          <div class="card mb-3"><div class="card-body"><div class="row"><div class="col-sm-3"><h6 class="mb-0">Full Name</h6></div><div class="col-sm-9 text-secondary"> Kenneth Valdez</div></div><hr><div class="row"><div class="col-sm-3"><h6 class="mb-0">Email</h6></div><div class="col-sm-9 text-secondary"> fip@jukmuh.al</div></div><hr><div class="row"><div class="col-sm-3"><h6 class="mb-0">Phone</h6></div><div class="col-sm-9 text-secondary"> (239) 816-9029</div></div><hr><div class="row"><div class="col-sm-3"><h6 class="mb-0">Mobile</h6></div><div class="col-sm-9 text-secondary"> (320) 380-4539</div></div><hr><div class="row"><div class="col-sm-3"><h6 class="mb-0">Address</h6></div><div class="col-sm-9 text-secondary"> Bay Area, San Francisco, CA</div></div><hr><div class="row"><div class="col-sm-12"> <a class="btn btn-info " target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a></div></div></div></div>
+        <br>
+        <br>
+        <br>
+        </div>
+        </div>
+        </div>
+        <footer class="bg-dark">
+            <div class="container">
+                <br>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <img src="static/lsticker-removebg-preview.png" alt="" width="180" class="mb-3">
+                    <p class="font-italic" style="color: azure;">Helping you to measure risk of diseases, take precaution and become a healthier you.</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <h6 class="text-uppercase font-weight-bold" style="color: azure;">Newsletter</h6>
+                  <p style="color:azure">Interested in receiving our monthly e-newsletter with tips to improve lifestyle and latest health related news?Then what are you waiting for..Sign Up now!!</p>
+                  <div class="p-1 rounded border">
+                    <div class="input-group">
+                      <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+                      <div class="input-group-append">
+                        <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <hr style="color:azure;">
+                <div class="container text-center">
+                    <p class="text-muted mb-0 py-2">Made by students of B.Tech CSAI, Indira Gandhi Delhi Technical University for Women, Delhi</p>
+                    <br>
+                  </div>
+              </div>
+            </div>
+          </footer>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+          crossorigin="anonymous"></script>
+          <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.backgroundColor="#212529";
+              } else {
+                document.getElementById("navbar").style.backgroundColor = "#ffffff00";
+              }
+            }
+        </script>
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+<style>
+  body {
+    width: 100vw;
+    height: 200vh;
+    padding: 1rem;
+    background-image:linear-gradient(#1D2B64,#F8CDDA);
+  }
+</style>
+{% endblock %}

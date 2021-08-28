@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="static/animate.css">
+    <link rel="stylesheet" href="static/blogs.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Blogs</title>
+    <style>
+        .navbar.fixed-top.transparent{
+            background-color: rgba(0,0,0,0.0);
+        }
+        .navbar.fixed-top.scrolled{
+            background-color: rgba(48, 28, 28, 0.795)
+        }
+        .search.input {
+            width:15rem;
+            padding: 12px 24px;
+            background-color: transparent;
+            transition: transform 250ms ease-in-out;
+            font-size: 14px;
+            line-height: 10px;
+            color: #575756;
+            background-color: transparent;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: 18px 18px;
+            background-position: 95% center;
+            border-radius: 50px;
+            border: 1px solid #575756;
+            transition: all 250ms ease-in-out;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+        }    
+        .search:focus{
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #575756;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+        .nav-item{
+            white-space:nowrap;
+            font-weight: bold;
+        }
+        .navbar-nav>li>a:hover{
+            color: brown !important;
+            cursor: pointer!important;
+            transition: all 300ms ease-in-out!important;
+        }
+        .main-raised{
+            margin:-60px 30px 0;
+            border-radius:6px;
+            box-shadow:0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2)
+        }
+        @media (max-width:830px){
+            .main-raised{
+                margin-left:10px;
+                margin-right:10px;
+            }
+        }
+        .main.main-raised{
+            margin-top:-40px;
+            background-image: linear-gradient(to bottom,rgba(255,218,185,0), rgba(247, 170, 217, 0.911));}
+        .page-header{height:98vh;margin-bottom:0;padding:0;border:0;display:flex;align-items:center;z-index: initial;}.page-header,.page-header .page-header-image{background-position:50%;background-size:cover;z-index: initial;}.page-header .page-header-image{position:absolute;width:100%;height:100%;z-index:initial}.page-header .content-center{top:50%;left:50%;z-index:initial;transform:translate(-50%,-50%);text-align:center;color:#fff;padding:0 15px;width:100%;max-width:880px}
+        .animate__animated.animate__fadeInDown{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1{
+            top: -10%;
+            left: 50%;
+            font-size: 100px;
+            transform: translate(-50%, -50%);
+        }
+        .animate__animated.animate__fadeInUp{
+            position:absolute;
+            top: 65%;
+            left: 27%;
+            /* transform: translate(-50%, -50%); */
+        }
+        h3{
+            font-weight: bold;
+            font-size: 23px;
+            top:10%;
+            white-space:nowrap;
+            
+        }
+        .myh1{
+            position:absolute;
+            top: 120%;
+            left: 68%;
+            transform: translate(-50%, -50%);
+            font-size: 70px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed-top transparent navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('home_page') }}"><img src='static\lsticker-removebg-preview.png' style="width:110px;height:70px;vertical-align:top;"></a>
+            <div class="topnav-right">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ url_for('home_page') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ url_for('blogs_page') }}" target="_blank">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#predictor">Predictor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ url_for('about_page') }}" target="_blank">About Us</a>
+                        </li>
+                        {% if current_user.is_authenticated %}
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="{{ url_for('profile_page') }}">My Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="{{ url_for('logout_page') }}">Logout</a>
+                            </li>
+                        </ul>
+                        {% else %}
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="{{ url_for('login_page') }}">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="{{ url_for('register_page') }}">Register</a>
+                                </li>
+                            </ul>
+                        {% endif %}
+                    </ul>
+                    <form class="search container" style="float:none;">
+                        <input class="search input" type="text" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <div class="page-header" data-parallax="true" style="background-image:url(static/bgcancer.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <div class="brand">
+                            <div class="animate__animated animate__fadeInDown">
+                            <h1>CANCER BLOGS</h1>
+                            </div>
+                            <div class="animate__animated animate__fadeInUp">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main main-raised">
+            <div class="myh1">
+                <h1>Top Reads</h1>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="section section-basic">
+                <div class="container">
+                    <div id="__next">
+                        <div class="styles-k9aixa-0 fKYIqc">
+                            <div id="glitch_blog_container">
+                                <main>
+                                    <div class="pages__Container-sc-12rcupd-0 jKEjhH">
+                                                <br>
+                                                <br>
+                                                <br>
+                                        <div class="ContentPanel__Container-jtbuqe-0 bULRbd content_panel triple_featured_panel">
+                                            <div class="panel_content">
+                                                <div class="ContentCard__Container-j0e16m-0 ioZbKH content_card featured_grid_card ">
+                                                    <div class="content_image">
+                                                        <a href="https://www.healthline.com/health/best-cancer-blogs-of-the-year#1">
+                                                            <img src="static/cancer.jpg" alt="Best Cancer blogs" width="100%" height="auto"/>
+                                                        </a>
+                                                    </div>
+                                                    <div class="content_details framed">
+                                                        <a href="https://www.healthline.com/health/best-cancer-blogs-of-the-year#1" class="content_title">Best Blogs 2020
+                                            
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="ContentCard__Container-j0e16m-0 ioZbKH content_card grid_card ">
+                                                    <div class="content_image">
+                                                        <a href="https://www.cancer.net/blog/2018-09/6-lifestyle-changes-improve-your-cancer-care">
+                                                            <img src="https://www.cancer.net/sites/cancer.net/files/styles/blog_media/public/cohen_lorenzo-jeffries_alison.jpg?itok=LGAZFG3_" alt="Post feature image" width="100%" height="auto"/>
+                                                        </a>
+                                                    </div>
+                                                    <div class="content_details framed">
+                                                        <a href="https://www.cancer.net/blog/2018-09/6-lifestyle-changes-improve-your-cancer-care" class="content_title">Lifestyle changes to cure Cancer</a>
+                                                        <p class="content_excerpt line_clamp"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="ContentCard__Container-j0e16m-0 ioZbKH content_card grid_card ">
+                                                    <div class="content_image">
+                                                        <a href="https://www.cancer.org/treatment/treatments-and-side-effects/physical-side-effects/emotional-mood-changes.html">
+                                                            <img src="https://imgk.timesnownews.com/story/cancer-and-mental-health.gif?tr=w-600,h-450,fo-auto" alt="Mental Health" width="100%" height="auto"/>
+                                                        </a>
+                                                    </div>
+                                                    <div class="content_details framed">
+                                                        <a href="https://www.cancer.org/treatment/treatments-and-side-effects/physical-side-effects/emotional-mood-changes.html" class="content_title">Emotional Health of Cancer patients</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr style="height: 5px;">
+                                        </div>
+                                    </div>
+                                    <div class="ContentPanel__Container-jtbuqe-0 bULRbd content_panel triple_panel">
+                                        <div class="panel_content"><div class="ContentCard__Container-j0e16m-0 ioZbKH content_card grid_card ">
+                                            <div class="content_image">
+                                                <a href="https://www.cancer.org/treatment/survivorship-during-and-after-treatment/staying-active/physical-activity-and-the-cancer-patient.html">
+                                                    <img src="http://contemplative-studies.org/wp/wp-content/uploads/2018/04/Yoga-Cancer2-Danhauer.jpg" alt="Post feature image" width="100%" height="auto"/>
+                                                </a>
+                                            </div>
+                                            <div class="content_details framed">
+                                                <a href="https://www.cancer.org/treatment/survivorship-during-and-after-treatment/staying-active/physical-activity-and-the-cancer-patient.html" class="content_title">Physical Activity and the Person with Cancer</a>
+                                                <p class="content_excerpt line_clamp"></p>
+                                            </div>
+                                        </div>
+                                        <div class="ContentCard__Container-j0e16m-0 ioZbKH content_card grid_card ">
+                                            <div class="content_image">
+                                                <a href="https://www.mskcc.org/news/truth-behind-three-natural-cures">
+                                                    <img src="https://www.mskcc.org/sites/default/files/styles/width_800/public/node/107628/3x2/droppers.jpg" alt="Post feature image" width="100%" height="auto"/>
+                                                </a>
+                                            </div>
+                                            <div class="content_details framed">
+                                                <a href="https://www.mskcc.org/news/truth-behind-three-natural-cures" class="content_title">The Truth behind Three Natural Cancer “Cures”</a>
+                                            </div>
+                                        </div>
+                                        <div class="ContentCard__Container-j0e16m-0 ioZbKH content_card grid_card ">
+                                            <div class="content_image">
+                                                <a href="https://www.cancer.gov/about-cancer/understanding/what-is-cancer">
+                                                    <img src="https://www.cancer.gov/sites/g/files/xnrzdm211/files/styles/cgov_article/public/cgov_contextual_image/2019-06/1-how-does-cancer-form.jpg?h=b48714fe&itok=fc2eMUvr" alt="Post feature image" width="100%" height="auto"/>
+                                                </a>
+                                            </div>
+                                            <div class="content_details framed">
+                                                <a href="https://www.cancer.gov/about-cancer/understanding/what-is-cancer" class="content_title">Everything you need to know about Cancer</a>
+                                            </div>
+                                        </div>                                      
+                                        
+                                    </div>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.backgroundColor="#f0f0f0";
+            } else {
+                document.getElementById("navbar").style.backgroundColor = "#ffffff00";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% block title %}
+    Login Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center" style="background:url(static/diet1.jpg) no-repeat center;
+background-size: cover;">
+  <br>
+<br>
+<br>
+<br>
+    <div class="container">
+        <form method="POST" class="form-signin" style="color:white">
+            {{ form.hidden_tag() }}
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please Login
+            </h1>
+            <br>
+            {{ form.email.label() }}
+            {{ form.email(class="form-control", placeholder="Registered Email") }}
+
+            {{ form.password.label() }}
+            {{ form.password(class="form-control", placeholder="Create Password") }}
+
+            <br>
+
+            <div class="checkbox mb-3">
+               <h6>Don't have an account?</h6>
+               <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Sign Up</a>
+            </div>
+
+            {{ form.submit(class="button") }}
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+          crossorigin="anonymous"></script>
+          <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.backgroundColor="#212529";
+              } else {
+                document.getElementById("navbar").style.backgroundColor = "#ffffff00";
+              }
+            }
+        </script>
+</body>
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Montserrat);
+   html {
+   font-family: 'Montserrat', sans-serif;
+ }
+ a {
+   display:block;
+   text-decoration:none;
+   color:#A2A5A6;
+   text-align:center;
+   padding:20px 0 0;
+ }
+ .form-signin {
+   margin:5% auto;
+   width:400px;
+   min-height:400px;
+   background-color:rgba(34, 34, 34, 0.85);
+   padding:2.5% 5% 2.5%;
+   border-radius:2.5%;
+ }
+ h2 {
+   font-size:2em;
+   padding:0;
+   margin:0;
+   text-align:center;
+ }
+ input {
+   margin:5% 0;
+   border:none;
+   width:100%;
+   font-size:1.5em;
+   padding:0 0 2%;
+   background:none;
+ }
+ textarea:focus, input:focus{
+     outline: 0;
+ } 
+ #name {
+   border-bottom:2px solid #FBD75C;
+ }
+ #email {
+   border-bottom:2px solid #F2B07E;
+ }
+ #password1 {
+   border-bottom:2px solid #f89a52;
+ }
+ #password2 {
+   border-bottom:2px solid #f77b1d;
+ }
+ label {
+   color:#f1f3f5;
+   text-transform:uppercase;
+   font-size:0.8em;
+   letter-spacing:4px;
+ }
+ .button {
+   background:none;
+   border:none;
+   width:100%;
+   min-height:50px;
+   margin:10px 0 10px;
+   border-radius:2.5%;
+   color:white;
+   padding:0.5% 0 0;
+   font-size:1.75em;
+   transition: background 1s ease-out; 
+   background: #f2b07e;
+   background: linear-gradient(to right,#f2b07e 0%,#fbd75c 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2b07e', endColorstr='#fbd75c',GradientType=1 );
+ }
+ .button:hover {
+     background-position:-275px;  
+ } 
+   
+ </style>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .search.input {
+      width:15rem;
+      padding: 12px 24px;
+      background-color: transparent;
+      transition: transform 250ms ease-in-out;
+      font-size: 14px;
+      line-height: 10px;
+      color: #fff;
+      background-color: transparent;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 18px 18px;
+      background-position: 95% center;
+      border-radius: 50px;
+      border: 1px solid #fff;
+      transition: all 250ms ease-in-out;
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
+  }    
+  .search:focus{
+      padding: 12px 0;
+      outline: 0;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #fff;
+      border-radius: 0;
+      background-position: 100% center;
+  }
+  .nav-item{
+      white-space:nowrap;
+      font-weight: bolder;
+  }
+  .navbar-nav>li>a:hover{
+      color: brown !important;
+      cursor: pointer!important;
+      transition: all 300ms ease-in-out!important;
+  }
+</style> 
+{% endblock %}

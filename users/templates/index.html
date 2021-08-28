@@ -1,0 +1,274 @@
+{% extends 'base.html' %}
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block content %}
+<body>
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img style="height: 600px;" src="static/img1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5></h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img style="height: 600px;" src="static/img3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5></h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img style="height: 600px;" src="static/img2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5></h5>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div style="background:linear-gradient(45deg,rgb(1, 6, 56),rgb(27, 56, 184))" id="disease">
+    <br>
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-3 fw-bold" style="color:white;">PREDICT YOUR CHANCES OF HAVING A DISEASE</h1>
+        <br>
+        <div class="col-lg-8 mx-auto">
+          <p class="lead mb-4" style="color:white;">Due to modern lifestyle, diseases are increasing at an alarming rate. Our lifestyle, work type and food habits are the various factors which influence our health causing heart diseases and other health issues like Hypertension, Diabetes etc. In emerging countries like India, the urban population faces the wrath of it with 5.8 million deaths per year.
+            <br>
+            Data science and AI systems can be used for prediction and detection of such lethal diseases which will in turn help to take early actions against them.
+            <br>
+            The system allows collection, maintenance and analysis of large amount of data which eases the process of research on these diseases and eases work of medical researchers.
+          </p>
+          <br>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+        </div>
+      </div>
+      <div class="b-example-divider"></div>
+      <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-3 fw-bold" style="color:white;">DISCLAIMER</h1>
+        <br>
+        <div class="col-lg-8 mx-auto">
+          <p class="lead mb-4" style="color:white;">The material and information contained on this website is for general information purposes only. You should not rely upon the material or information on the website as a basis for making any medical decision.
+            <br>
+            <br>
+          Datasets are taken from kaggle.com. Whilst we endeavour to keep the information up to date and correct, Icare makes no representation of any kind, express or implied about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information contained on the website for any purpose. Any reliance you place on such material is therefore strictly at your own risk.
+            <br>
+          </p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+        </div>
+      </div>
+      <div id="predictor">
+        <br>
+            <br>
+            <br>
+        <br>
+        <br>
+        <h1 class="display-5 fw-bold text-white" style="text-align: center;">DISEASE PREDICTOR</h1>
+        <br>
+        <br>
+        <div class="d-flex justify-content-around">
+        <div class="card" style="width: 18rem;">
+          <img src="static/lungs2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lung Cancer Predictor</h5>
+            <p class="card-text">Lung cancer occurs when cells divide in the lungs uncontrollably. This causes tumors to grow. These can reduce a person’s ability to breathe and spread to other parts of the body.</p>
+            <a href="lung_cancer.html" class="btn btn-primary">Predict Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="static/cancer.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cancer Prediction</h5>
+            <p class="card-text">Cancer is a serious disease. Many cancers have a high chance of cure if diagnosed early and treated appropriately. </p>
+           <br>
+           <br>
+           <br>
+            <a href="{{ url_for('cancer_page') }}" class="btn btn-primary">Predict Now</a>
+          </div>
+        </div>
+        </div>
+        <br>
+        <br>
+          <div class="d-flex justify-content-around">
+        <div class="card" style="width: 18rem;">
+          <img src="static/breastcancer.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Breast Cancer Predictor</h5>
+            <p class="card-text">Breast cancer is cancer that forms in the cells of the breasts. After skin cancer, breast cancer is the most common cancer diagnosed in women.</p>
+            <br>
+            <a href="cancer.html" class="btn btn-primary">Predict Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://wp02-media.cdn.ihealthspot.com/wp-content/uploads/sites/520/2020/04/08160759/iStock-1168179082.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">STROKE PREDICTOR</h5>
+            <p class="card-text">A stroke occurs when the blood supply to part of your brain is interrupted or reduced, preventing brain tissue from getting oxygen and nutrients.</p>
+            <br>
+            <a href="{{ url_for('stroke_page') }}" class="btn btn-primary">Predict Now</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="d-flex justify-content-around">
+        <div class="card" style="width: 18rem;">
+          <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20210309115211/ri/673/picture/2021/3/shutterstock_1118711141_(1).jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Liver Disease Predictor</h5>
+            <p class="card-text">Liver disease is any disturbance of liver function that causes illness.</p>
+            <br>
+            <br>
+            <br>
+            <a href="cancer.html" class="btn btn-primary">Predict Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="static/tumor.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tumor Predictor</h5>
+            <p class="card-text"> An abnormal growth of body tissue that possesses no physiological function and arises from uncontrolled usually rapid cellular proliferation.</p>
+            <a href="" class="btn btn-primary">Predict Now</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="d-flex justify-content-around">
+        <div class="card" style="width: 18rem;">
+          <img src="static/heart1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Heart Attack Predictor</h5>
+            <p class="card-text">A heart attack occurs when the flow of blood to the heart is blocked.</p>
+            <br>
+            <br>
+            <br>
+            <a href="cancer.html" class="btn btn-primary">Predict Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="static/baby.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fetal Health Predictor</h5>
+            <p class="card-text">A stroke occurs when the blood supply to part of your brain is interrupted or reduced, preventing brain tissue from getting oxygen and nutrients.</p>
+            <a href="stroke.html" class="btn btn-primary">Predict Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+          <br>
+          <br><br> 
+        <div class="bg-dark text-secondary px-4 py-5 text-center">
+          <div class="py-1">
+            <h1 class="display-5 fw-bold text-white">MEET OUR TEAM</h1>
+            <br>
+    <div class="container ">      
+              <div class="d-flex justify-content-around">
+                <div class="col-lg-4">
+                  <svg class="bd-placeholder-img" width="160" height="160"
+                    xmlns="http://www.w3.org/2000/svg" role="img" <!-- Optional JavaScript; choose one of the two! -->
+                    aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <image href="static/jhanvee.jpg" height="160" width="160";/>
+                  </svg>
+                  <h2 style="color:white;">Jhanvee Khola</h2>
+                </div>
+                <div class="col-lg-4">
+                  <svg class="bd-placeholder-img" width="140" height="160"
+                    xmlns="http://www.w3.org/2000/svg" role="img" <!-- Optional JavaScript; choose one of the two! -->
+                    aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <image href="static/khushi.jpg" height="160" width="160";/>
+                  </svg>
+                  <h2 style="color:white;">Khushi Punia</h2>
+                </div>
+              </div>
+                <br>
+                <br>
+              <div class="d-flex justify-content-around">
+                <div class="col-lg-4">
+                  <svg class="bd-placeholder-img" width="160" height="160"
+                    xmlns="http://www.w3.org/2000/svg" role="img">
+                    aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <image href="static/princy.jpeg" height="160" width="160";/>
+                  </svg>
+                  <h2 style="color:white;">Princy Singla</h2>                
+                </div>
+                <div class="col-lg-4">
+                  <svg class="bd-placeholder-img" width="160" height="160"
+                    xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <image href="static/charu.jpeg" height="160" width="160";/>
+                  </svg>
+                  <h2 style="color:white;">Charu Singh</h2>         
+                </div>
+              </div>      
+          </div>
+          </div>
+        </div>             
+        </div>
+        <footer style="background:linear-gradient(45deg,rgb(1, 6, 56),rgb(27, 56, 184))">
+            <div class="container">
+                <br>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <img src="static/lsticker-removebg-preview.png" alt="" width="180" class="mb-3">
+                    <p class="font-italic" style="color: azure;">Helping you to measure risk of diseases, take precaution and become a healthier you.</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <h6 class="text-uppercase font-weight-bold" style="color: azure;">Newsletter</h6>
+                  <p style="color:azure">Interested in receiving our monthly e-newsletter with tips to improve lifestyle and latest health related news?Then what are you waiting for..Sign Up now!!</p>
+                  <div class="p-1 rounded border">
+                    <div class="input-group">
+                      <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+                      <div class="input-group-append">
+                        <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <hr style="color:azure;">
+                <div class="container text-center">
+                    <p class="text-muted mb-0 py-2">Made by students of B.Tech CSAI, Indira Gandhi Delhi Technical University for Women, Delhi</p>
+                    <br>
+                  </div>
+              </div>
+          </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+          crossorigin="anonymous"></script>
+          <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.backgroundColor="#212529";
+              } else {
+                document.getElementById("navbar").style.backgroundColor = "#ffffff00";
+              }
+            }
+        </script>
+</body>
+{% endblock %}
