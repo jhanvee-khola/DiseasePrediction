@@ -1,6 +1,3 @@
-<p align="center">
-  <h1>Disease Prediction</h1><br>
-</p>
 # Disease Prediction
 Calculates your risk of contracting a disease like cancer based on your various attributes like age, smoking habits, occupational status, diet etc.
 
