@@ -6,7 +6,7 @@ Calculates your risk of contracting a disease like cancer based on your various 
 
 ## Documentation
 The Machine Learning Models for various diseases are trained on datasets that can be found here -
-1. Cancer - [Cancer Patients Data](https://www.kaggle.com/rishidamarla/cancer-patients-data)
+1. Cancer - [Cancer Patients Data](https://www.kaggle.com/rishidamarla/cancer-patients-data) 
 2. Stroke - [Stroke Prediction Dataset](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset)
 3. Breast Cancer - [Breast Cancer Wisconsin (Diagnostic) Data Set](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
 4. Heart Disease - [Heart Disease UCI](https://www.kaggle.com/ronitf/heart-disease-uci)
@@ -54,5 +54,6 @@ https://user-images.githubusercontent.com/77978729/131226487-8656446c-2097-43ea-
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/khushi-punia-7261b5204)
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/khushipunia21)
 
+[stroke.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071220/stroke.csv)
 
 
