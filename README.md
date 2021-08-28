@@ -1,4 +1,6 @@
-
+<p align="center">
+  <h1>Disease Prediction</h1><br>
+</p>
 # Disease Prediction
 Calculates your risk of contracting a disease like cancer based on your various attributes like age, smoking habits, occupational status, diet etc.
 
@@ -10,7 +12,7 @@ The Machine Learning Models for various diseases are trained on datasets that ca
 2. Stroke - [Stroke Prediction Dataset](https://github.com/jhanvee-khola/DiseasePrediction/files/7071220/stroke.csv)
 3. Breast Cancer - [Breast Cancer Wisconsin (Diagnostic) Data Set](https://github.com/jhanvee-khola/DiseasePrediction/files/7071238/breastcancer.csv)
 4. Heart Disease - [Heart Disease UCI](https://github.com/jhanvee-khola/DiseasePrediction/files/7071305/heartdisease.csv)
-5. Fetal Health - [Fetal Health Classification](https://www.kaggle.com/andrewmvd/fetal-health-classification)
+5. Fetal Health - [Fetal Health Classification](https://github.com/jhanvee-khola/DiseasePrediction/files/7071317/Fetal.csv)
 6. Lung Cancer - [Lung Cancer Dataset by STACEYINROBERT](https://github.com/jhanvee-khola/DiseasePrediction/files/7071283/survey.lung.cancer.csv)
 7. Liver Disease - [Indian Liver Patient Records](https://github.com/jhanvee-khola/DiseasePrediction/files/7071252/indian_liver_patient.csv)
 8. Tumor Classification - [tumors](https://github.com/jhanvee-khola/DiseasePrediction/files/7071236/tumor.csv)
@@ -58,8 +60,6 @@ https://user-images.githubusercontent.com/77978729/131226487-8656446c-2097-43ea-
   <b>Liked It? Found it Useful? Give a ⭐ maybe..?</b><br>
 </p>
 
-
-[Fetal.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071317/Fetal.csv)
 
 
 
