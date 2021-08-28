@@ -46,7 +46,9 @@ https://user-images.githubusercontent.com/77978729/131226487-8656446c-2097-43ea-
 
 ## 🔗 Connect with the Team
 ### Jhanvee Khola
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jhanvee-khola/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-b[heartdisease.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071300/heartdisease.csv)
+[heartdisease.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071301/heartdisease.csv)
+adge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jhanvee-khola/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/jhanvee_khola)
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhanvee-khola)
 
@@ -55,5 +57,19 @@ https://user-images.githubusercontent.com/77978729/131226487-8656446c-2097-43ea-
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/khushipunia21)
 
 [stroke.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071220/stroke.csv)
+[tumor.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071236/tumor.csv)
+[covid.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071237/covid.csv)
+[breastcancer.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071238/breastcancer.csv)
+[cancer patient data sets.xlsx](https://github.com/jhanvee-khola/DiseasePrediction/files/7071239/cancer.patient.data.sets.xlsx)
+[indian_liver_patient.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071252/indian_liver_patient.csv)
+[survey lung cancer.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071283/survey.lung.cancer.csv)
+[heartdisease.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071305/heartdisease.csv)
+[heart attack.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071303/heart.attack.csv)
+
+
+
+
+
+
 
 
