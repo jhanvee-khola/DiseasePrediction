@@ -53,6 +53,13 @@ https://user-images.githubusercontent.com/77978729/131226487-8656446c-2097-43ea-
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/khushi-punia-7261b5204)
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/khushipunia21)
 
+### Charu Singh
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/charu-singh-869029202/)
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CharuSingh01)
+
+### Princy Singhal
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PrincySinghal)
+
 <p align="center">
   <b>Liked It? Found it Useful? Give a ⭐ maybe..?</b><br>
 </p>
