@@ -6,15 +6,15 @@ Calculates your risk of contracting a disease like cancer based on your various 
 
 ## Documentation
 The Machine Learning Models for various diseases are trained on datasets that can be found here -
-1. Cancer - [Cancer Patients Data](https://www.kaggle.com/rishidamarla/cancer-patients-data) 
-2. Stroke - [Stroke Prediction Dataset](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset)
-3. Breast Cancer - [Breast Cancer Wisconsin (Diagnostic) Data Set](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
-4. Heart Disease - [Heart Disease UCI](https://www.kaggle.com/ronitf/heart-disease-uci)
+1. Cancer - [Cancer Patients Data](https://github.com/jhanvee-khola/DiseasePrediction/files/7071239/cancer.patient.data.sets.xlsx)
+2. Stroke - [Stroke Prediction Dataset](https://github.com/jhanvee-khola/DiseasePrediction/files/7071220/stroke.csv)
+3. Breast Cancer - [Breast Cancer Wisconsin (Diagnostic) Data Set](https://github.com/jhanvee-khola/DiseasePrediction/files/7071238/breastcancer.csv)
+4. Heart Disease - [Heart Disease UCI](https://github.com/jhanvee-khola/DiseasePrediction/files/7071305/heartdisease.csv)
 5. Fetal Health - [Fetal Health Classification](https://www.kaggle.com/andrewmvd/fetal-health-classification)
-6. Lung Cancer - [Lung Cancer Dataset by STACEYINROBERT](https://www.kaggle.com/imkrkannan/lung-cancer-dataset-by-staceyinrobert)
-7. Liver Disease - [Indian Liver Patient Records](https://www.kaggle.com/uciml/indian-liver-patient-records)
-8. Tumor Classification - [tumors](https://www.kaggle.com/samsonqian/tumors)
-9. Heart Attack Risk [Heart Attack Analysis & Prediction Dataset](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset)
+6. Lung Cancer - [Lung Cancer Dataset by STACEYINROBERT](https://github.com/jhanvee-khola/DiseasePrediction/files/7071283/survey.lung.cancer.csv)
+7. Liver Disease - [Indian Liver Patient Records](https://github.com/jhanvee-khola/DiseasePrediction/files/7071252/indian_liver_patient.csv)
+8. Tumor Classification - [tumors](https://github.com/jhanvee-khola/DiseasePrediction/files/7071236/tumor.csv)
+9. Heart Attack Risk [Heart Attack Analysis & Prediction Dataset](https://github.com/jhanvee-khola/DiseasePrediction/files/7071303/heart.attack.csv)
 
 
 ## Local Set-Up
@@ -46,9 +46,7 @@ https://user-images.githubusercontent.com/77978729/131226487-8656446c-2097-43ea-
 
 ## 🔗 Connect with the Team
 ### Jhanvee Khola
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-b[heartdisease.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071300/heartdisease.csv)
-[heartdisease.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071301/heartdisease.csv)
-adge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jhanvee-khola/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jhanvee-khola/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/jhanvee_khola)
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jhanvee-khola)
 
@@ -56,17 +54,9 @@ adge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jhanvee-khola/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/khushi-punia-7261b5204)
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/khushipunia21)
 
-[stroke.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071220/stroke.csv)
-[tumor.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071236/tumor.csv)
-[covid.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071237/covid.csv)
-[breastcancer.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071238/breastcancer.csv)
-[cancer patient data sets.xlsx](https://github.com/jhanvee-khola/DiseasePrediction/files/7071239/cancer.patient.data.sets.xlsx)
-[indian_liver_patient.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071252/indian_liver_patient.csv)
-[survey lung cancer.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071283/survey.lung.cancer.csv)
-[heartdisease.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071305/heartdisease.csv)
-[heart attack.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071303/heart.attack.csv)
-
-
+<p align="center">
+  <b>Liked It? Found it Useful? Give a ⭐ maybe..?</b><br>
+</p>
 
 
 
