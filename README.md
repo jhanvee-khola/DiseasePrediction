@@ -59,6 +59,7 @@ https://user-images.githubusercontent.com/77978729/131226487-8656446c-2097-43ea-
 </p>
 
 
+[Fetal.csv](https://github.com/jhanvee-khola/DiseasePrediction/files/7071317/Fetal.csv)
 
 
 
