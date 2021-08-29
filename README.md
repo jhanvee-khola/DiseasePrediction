@@ -4,7 +4,7 @@ Calculates your risk of contracting a disease like cancer based on your various 
 <img width="947" alt="ss1" src="https://user-images.githubusercontent.com/77978729/131225661-fad5db54-aa3a-41e6-89bb-473a689167e9.png">
 
 ## Documentation
-The Machine Learning Models for various diseases are trained on datasets that can be found here -
+The Machine Learning Models for various diseases are trained on datasets taken from kaggle.com and can be downloaded from links below -
 1. Cancer - [Cancer Patients Data](https://github.com/jhanvee-khola/DiseasePrediction/files/7071239/cancer.patient.data.sets.xlsx)
 2. Stroke - [Stroke Prediction Dataset](https://github.com/jhanvee-khola/DiseasePrediction/files/7071220/stroke.csv)
 3. Breast Cancer - [Breast Cancer Wisconsin (Diagnostic) Data Set](https://github.com/jhanvee-khola/DiseasePrediction/files/7071238/breastcancer.csv)
